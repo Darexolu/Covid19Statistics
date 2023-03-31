@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.statsapp{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(7, 1, 14);
+    font-size: 40px;
+}
+
+.globalstats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    }
+    .boxes{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(7, 12, 12);
+    }
+  .title{
+    color: white;
+  }
+  .title1{
+    color: red;
+  }
+.title2{
+    color: green;
+    margin-left: 25px;
+
+}
+.tcStats,.ncStats,.NDStats,.TDStats,.TRStats,.NRStats{
+    font-size: 50px;
+}
+.NCTitle{
+    margin-left: 30px;
+}
+.TDTitle{
+    margin-left: 50px;
+ 
+}
+.TCTitle{
+    margin-left: 65px;
+}
+.NDTitle{
+    margin-left: 5px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css"> 
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Covid19 Statistics</title>
+
+</head>
+<body>
+    <h1 class="statsapp">Covid19 Statistics</h1>
+
+   <div class="globalstats">
+    <div class="boxes NewConfirmed">
+        <div ><p class="title NCTitle">New confirmed</p>
+        <h3 class="title1 ncStats"></h3></div>
+    </div>
+    <div class="boxes TotalConfirmed">
+        <div class="title">
+        <p  class="TCTitle">Total confirmed</p>
+        <h3 class="tcStats"></h3>
+    </div>
+    </div>
+    <div class="boxes NewDeaths">
+        <div>
+        <p class="title NDTitle">New deaths</p>
+        <h3 class="title1 NDStats"></h3>
+    </div>
+    </div>
+    <div class="boxes TotalDeaths">
+        <div  class="title"><p class="TDTitle">Total deaths</p>
+        <h3 class="title1 TDStats"></h3>
+    </div>
+    </div>
+    <div class="boxes NewRecovered">
+        <div class="title"><p class="NRTitle">New recovered</p>
+        <h3 class="title2 NRStats"></h3>
+    </div></div>
+    <div class="boxes TotalRecovered">
+        <div  ><p class="title TRTitle">Total recovered</p>
+        <h3 class="title2 TRStats"></h3>
+    </div>
+</div>
+   </div>
+
+    <table id="example" class="display table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Country Code</th>
+                <th>Slug</th>
+                <th>New Confirmed</th>
+                <th>Total Confirmed</th>
+                <th>New Deaths</th>
+                <th>Total Deaths</th>
+                <th>Total recovered</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>           
+    </table>
+    <script src="script.js"></script>
+    
+</body>
+</html>
